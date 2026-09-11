@@ -1,10 +1,46 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<%- include("./partials/head.ejs") %>
+
 <body>
+    <%- include("./partials/nav.ejs") %>
+
     <h1>I need coffee</h1>
+
+    <section>
+        <h2>Vårt kaffeutvalg</h2>
+        <div class="kaffe">
+            <div class="kaff">
+                <img src="./img/cappuchino.webp" alt="cappuchino">
+                <h3>Cappuchino</h3>
+                <p>Lorem</p>
+               <a href="/cappuchino">Les mer</a>
+            </div>
+                     <div class="kaff">
+                <img src="./img/latte.webp" alt="latte">
+                <h3>Latte</h3>
+                <p>Lorem</p>
+               <a href="/latte">Les mer</a>
+            </div>
+                     <div class="kaff">
+                <img src="./img/americano.jpeg" alt="americano">
+                <h3>Americano</h3>
+                <p>Lorem</p>
+                <!-- ingen .ejs -> kun banenavn -->
+               <a href="/americano">Les mer</a> 
+            </div>
+        </div>
+    </section>
+    <form action="" method="post">
+        <label for="">Hvilken kaffe</label>
+        <input type="text" name="kaffe" id="kaffe" placeholder="cappuchino">
+        <label for="antall">Antall</label>
+        <input type="number" name="antall" id="antall">
+        <label for="størrelse">Størrelse</label>
+        <select name="size" id="størrelse">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <button>Send inn</button>
+    </form>
 </body>
 </html>

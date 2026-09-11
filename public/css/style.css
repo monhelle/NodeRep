@@ -1,0 +1,79 @@
+:root {
+    --bgColor: black;
+    --textColor: white;
+    --accentColor: pink;
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+p, label, h1, h2, h3, a {
+    color: var(--textColor);
+}
+
+button {
+    background-color: var(--accentColor);
+    padding: 8px 10px;
+    border-radius: 12px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+input {
+    padding: 4px;
+    border-radius: 10px;
+}
+
+
+img {
+    max-width: 300px;
+}
+
+.kaffe {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+   
+}
+
+.kaff {
+     border: 1px solid var(--accentColor);
+     border-radius: 20px;
+     min-height: 350px;
+}
+
+.kaff img {
+    /* width: 100%; */
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.kaff a {
+    background-color: var(--accentColor);
+    padding: 4px 8px;
+    border-radius: 20px;
+    color: var(--bgColor);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+
+}

@@ -1,0 +1,15 @@
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+  <form action="" method="post">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+    <label for="passord">Passord</label>
+    <input type="password" name="passord" id="passord" />
+    <label for="passord">Gjenta passord</label>
+    <input type="password" name="gjentaPassord" id="passord" />
+    <button>Registrer</button>
+    <a href="/login">Allerede bruker? Logg inn her</a>
+  </form>
+</body>
